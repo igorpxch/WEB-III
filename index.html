@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Farmaguia Login</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="img/farmacia.png" type="image/x-icon">
+    </head>
+    <body>
+        <div class="container">
+            <div class="left-section">
+                <div class="logo">
+                    <div class="icon">➕</div>
+                    <h1 class="h1">Farmaguia</h1>
+                </div>
+                <div class="contact-info">
+                    <p><span>🏠</span> Localização: Rua Farmaguia</p>
+                    <p><span>📧</span> E-Mail: farmaguia@gmail.com</p>
+                    <p><span>📞</span> Telefone:(51)90000-0000</p>
+                    <p><span>🌐</span> Site: Farmaguiua.com.br</p>
+                </div>
+            </div>
+            <div class="login-section">
+                <h2>Faça parte da nossa comunidade!</h2>
+                <form action="usuario-controller" method="post" class="validar" novalidate>
+                    <input type="hidden" name="pagina" value="login">
+                    <label for="email">Nome:</label>
+                    <input type="email" id="email" placeholder="Coloque seu nome">
+                    <label for="password">E-mail:</label>
+                    <input type="password" id="password" placeholder="Coloque seu e-mail">
+                    <a href="principal.html">ENTRAR</a>                
+                </form>
+            </div>
+        </div>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/init-validation.js"></script>
+    </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Farmaguia</title>
+        <link rel="shortcut icon" href="img/farmacia.png" type="image/x-icon">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f8f8f8;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            /* Estilo do cabeçalho */
+            .header {
+                width: 100%;
+                background: linear-gradient(to bottom, #00d8ff, #f8f8f8);
+                padding: 20px;
+                text-align: end;
+
+            }
+            .mais {
+                background-color: #ffffff;
+                color: #00eeff;
+                font-size: 30px;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: -10px;
+                margin-left: 10px;
+
+            }
+
+
+            .icon {
+                display: flex;
+                align-items: flex-start;
+                gap: 10px;
+                margin-left: 71px;
+                margin-top: -45px;
+            }
+
+
+
+            .nav {
+                margin-top: 10px;
+                margin-right: 70px;
+            }
+
+            .nav a {
+                margin: 0 15px;
+                text-decoration: none;
+                color: #000;
+                font-size: 18px;
+            }
+
+            /* Estilo do container das caixas */
+            .container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                row-gap: 50px;
+                column-gap: 120px;
+                width: 100%;
+                max-width: 900px;
+                margin-top: 20px;
+
+
+            }
+
+            .box {
+                width: 100%;
+                padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+                background-color: #00aeff63;
+                border-radius: 8px;
+            }
+
+            /* Estilo do rodapé */
+            .footer {
+                width: 100%;
+                height: 80px;
+                background-color: #000;
+                margin-top: 40px;
+                bottom: 0;
+                left: 0;
+                position: static;
+
+
+
+
+            }
+            .info {
+
+                color: #e0e0e0;
+                display: flex;
+                justify-items: center;
+                align-items: center;
+                margin-top: 30px;
+                margin-left: 200px;
+                gap: 32px
+                    ;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo">
+                <div class="mais">➕</div>
+                <h1 class="icon">Farmaguia</h1>
+            </div>
+            <div class="nav">
+                <a href="#">Dermatologia</a>
+                <a href="#">Medicamentos</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="footer">
+            <div class="info">
+                <div><span>🏠</span> Endereço:Rua Farmaguia, 319 - Porto Alegre - RS</div>
+                <div><span>📧</span> E-Mail:farmaguia@gmail.com</div>
+                <div><span>📞</span> Telefone:(51)00000-0000</div>
+                <div><span>🌐</span> Site:Farmaguia.com.br</div>
+            </div>
+        </div>
+    </body>
+</html>
